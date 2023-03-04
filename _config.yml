@@ -1,4 +1,3 @@
 theme: daviddarnes/alembic@main
 include:
-  - assets
   - README.md
