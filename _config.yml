@@ -1,3 +1,3 @@
-theme: daviddarnes/alembic@main
+remote_theme: daviddarnes/alembic@main
 include:
   - README.md
