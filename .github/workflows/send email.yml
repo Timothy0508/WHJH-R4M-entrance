@@ -1,0 +1,29 @@
+on:
+  push:
+    branches:
+      - master
+      
+jobs:
+  deploy:
+    runs-on:
+      ubuntu-18.04
+    steps:
+      - name: Send email
+      # You may pin to the exact commit or the version.
+      # uses: dawidd6/action-send-mail@6063705cefe50cb915fc53bb06d4049cae2953b2
+        uses: dawidd6/action-send-mail@v3.7.1
+        with:
+          # Connection URL protocol://user:password@server:port, protocol can be smtp or smtp+starttls, replaces server_address, server_port, secure, username and password
+          # SMTP server address
+          # SMTP server port
+          # Whether this connection use TLS (default is true if server_port is 465)
+          secure: true
+          # Authenticate as this user to SMTP server
+          # Authenticate with this password to SMTP server
+          # Subject of mail message
+          subject: 
+           Hi
+          to: 
+            timothytseng508@gmail.com
+          from: 
+            timothytseng508@gmail.com
